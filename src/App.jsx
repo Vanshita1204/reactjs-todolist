@@ -11,10 +11,10 @@ function App() {
   }
 
   function handleAddTodo(newTodo) {
-    if(newTodo!=''){
-    const newTodoList = [...todos, newTodo]
-    persistData(newTodoList)
-    setTodos(newTodoList)
+    if (newTodo != '') {
+      const newTodoList = [...todos, newTodo]
+      persistData(newTodoList)
+      setTodos(newTodoList)
     }
   }
 
