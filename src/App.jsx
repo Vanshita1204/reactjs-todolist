@@ -27,9 +27,11 @@ function App() {
   }
 
   function handleEditTodo(index) {
-    const valueToBeEdited = todos[index]
-    setTodoValue(valueToBeEdited)
-    handleDeleteTodo(index)
+    if (todoValue !== '') {
+      const valueToBeEdited = todos[index]
+      setTodoValue(valueToBeEdited)
+      handleDeleteTodo(index)
+    }
   }
 
   useEffect(() => {
