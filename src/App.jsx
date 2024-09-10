@@ -27,7 +27,7 @@ function App() {
   }
 
   function handleEditTodo(index) {
-    if (todoValue !== '') {
+    if (todoValue === '') {
       const valueToBeEdited = todos[index]
       setTodoValue(valueToBeEdited)
       handleDeleteTodo(index)
